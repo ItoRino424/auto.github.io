@@ -4,21 +4,67 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>テスト用ログインページ</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            text-align: center;
+        }
+        h2 {
+            color: #333;
+        }
+        label {
+            display: block;
+            text-align: left;
+            margin: 10px 0 5px;
+        }
+        input {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            background-color: #28a745;
+            color: white;
+            border: none;
+            padding: 10px;
+            width: 100%;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+        .title { color: #007bff; } 
+    </style>
 </head>
 <body>
-    <div>
-    <h2 class="aaa">ログイン</h2>
-        <div>
-    <form>
-        <label for="username">ユーザー名:</label>
-        <input type="text" id="username" name="username"><br><br>
-        
-        <label for="password">パスワード:</label>
-        <input type="password" id="password" name="password"><br><br>
-        
-        <button id="signin-btn">サインイン</button>
-    </form>
-        </div>
-     </div>
+    <div class="container">
+        <h2 class="title">サインイン</h2>
+        <form>
+            <label for="username">ユーザー名:</label>
+            <input type="text" id="username" name="username">
+            
+            <label for="password">パスワード:</label>
+            <input type="password" id="password" name="password">
+            
+            <button id="signin-btn">サインイン</button>
+        </form>
+    </div>
 </body>
 </html>
